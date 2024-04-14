@@ -1,3 +1,35 @@
+## game_controller_spl (rolling) - 4.0.1-1
+
+The packages in the `game_controller_spl` repository were released into the `rolling` distro by running `/usr/bin/bloom-release game_controller_spl --rosdistro rolling -e` on `Sun, 14 Apr 2024 00:37:54 -0000`
+
+These packages were released:
+- `game_controller_spl`
+- `game_controller_spl_interfaces`
+- `gc_spl`
+- `gc_spl_2022`
+- `gc_spl_interfaces`
+- `rcgcd_spl_14`
+- `rcgcd_spl_14_conversion`
+- `rcgcrd_spl_4`
+- `rcgcrd_spl_4_conversion`
+
+Version of package(s) in repository `game_controller_spl`:
+
+- upstream repository: https://github.com/ros-sports/gc_spl.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `4.0.0-1`
+- new version: `4.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## gc_spl (iron) - 3.1.0-1
 
 The packages in the `gc_spl` repository were released into the `iron` distro by running `/usr/bin/bloom-release --rosdistro iron -e gc_spl` on `Sat, 20 Jan 2024 18:07:33 -0000`
