@@ -2,6 +2,9 @@
 Changelog for package gc_spl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.0.1 (2024-04-14)
+------------------
+
 4.0.0 (2024-01-20)
 ------------------
 * Deprecate package (`#79 <https://github.com/ros-sports/gc_spl/issues/79>`_)
