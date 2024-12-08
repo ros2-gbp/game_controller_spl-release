@@ -1,3 +1,28 @@
+## game_controller_spl (rolling) - 5.0.0-1
+
+The packages in the `game_controller_spl` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -e --rosdistro rolling game_controller_spl` on `Sun, 08 Dec 2024 23:44:30 -0000`
+
+These packages were released:
+- `game_controller_spl`
+- `game_controller_spl_interfaces`
+
+Version of package(s) in repository `game_controller_spl`:
+
+- upstream repository: https://github.com/ros-sports/game_controller_spl.git
+- release repository: https://github.com/ros2-gbp/game_controller_spl-release.git
+- rosdistro version: `4.0.1-1`
+- old version: `4.0.1-1`
+- new version: `5.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## game_controller_spl (jazzy) - 4.1.0-1
 
 The packages in the `game_controller_spl` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release -e --rosdistro jazzy game_controller_spl` on `Sun, 08 Dec 2024 23:35:25 -0000`
