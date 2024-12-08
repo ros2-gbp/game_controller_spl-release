@@ -1,4 +1,4 @@
-# Copyright 2022 Kenji Brameld
+# Copyright 2024 Kenji Brameld
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from rcgcd_spl_14.msg import RCGCD
-
-from rcgcd_spl_14_conversion.robocup_game_control_data import (
+from game_controller_spl.rcgcd_16.robocup_game_control_data import (
     MAX_NUM_PLAYERS, RoboCupGameControlData)
+from game_controller_spl_interfaces.msg import RCGCD16
 
 
-def rcgcd_data_to_msg(data: bytes) -> RCGCD:
+def rcgcd_data_to_msg(data: bytes) -> RCGCD16:
     """Convert binary data to RCGCRD ROS msg."""
     parsed = RoboCupGameControlData.parse(data)
-    msg = RCGCD()
+    msg = RCGCD16()
     msg.packet_number = parsed.packetNumber
     msg.players_per_team = parsed.playersPerTeam
     msg.competition_phase = parsed.competitionPhase
@@ -35,7 +34,9 @@ def rcgcd_data_to_msg(data: bytes) -> RCGCD:
     msg.secondary_time = parsed.secondaryTime
     for t in range(2):
         msg.teams[t].team_number = parsed.teams[t].teamNumber
-        msg.teams[t].team_colour = parsed.teams[t].teamColour
+        msg.teams[t].field_player_colour = parsed.teams[t].fieldPlayerColour
+        msg.teams[t].goalkeeper_colour = parsed.teams[t].goalkeeperColour
+        msg.teams[t].goalkeeper = parsed.teams[t].goalkeeper
         msg.teams[t].score = parsed.teams[t].score
         msg.teams[t].penalty_shot = parsed.teams[t].penaltyShot
         msg.teams[t].single_shots = parsed.teams[t].singleShots
