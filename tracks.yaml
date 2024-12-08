@@ -68,14 +68,14 @@ tracks:
       :{release_inc} --os-name rhel
     devel_branch: humble
     last_version: 2.1.0
-    name: gc_spl
+    name: game_controller_spl
     patches: null
     release_inc: '1'
     release_repo_url: null
     release_tag: :{version}
     ros_distro: humble
     vcs_type: git
-    vcs_uri: https://github.com/ros-sports/gc_spl.git
+    vcs_uri: https://github.com/ros-sports/game_controller_spl.git
     version: :{auto}
   iron:
     actions:
