@@ -18,4 +18,4 @@ uint8 score
 uint8 penalty_shot
 uint16 single_shots
 uint16 message_budget
-gc_spl_interfaces/RobotInfo15[20] players
+game_controller_spl_interfaces/RobotInfo15[20] players
